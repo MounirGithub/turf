@@ -12,7 +12,6 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nom;
     private LocalDate date;
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)

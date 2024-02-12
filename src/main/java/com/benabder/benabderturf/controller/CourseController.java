@@ -20,10 +20,10 @@ public class CourseController {
     @Autowired
     private CourseProducer courseProducer;
 
-    @PostMapping
+    @PostMapping("/sendCourse")
     public ResponseEntity<Course> creerCourse(@RequestBody Course course) {
         Course nouvelleCourse = courseService.creerCourse(course);
-        courseProducer.sendMessage("Une nouvelle course a été créée : " + course.getNom());
+//        courseProducer.sendMessage("Une nouvelle course a été créée : " + course.getNom());
         return new ResponseEntity<>(nouvelleCourse, HttpStatus.CREATED);
     }
 }

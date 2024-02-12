@@ -1,9 +1,7 @@
 package com.benabder.benabderturf.service;
 
 import com.benabder.benabderturf.model.Course;
-import com.benabder.benabderturf.model.Partant;
 import com.benabder.benabderturf.repository.CourseRepository;
-import com.benabder.benabderturf.repository.PartantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
