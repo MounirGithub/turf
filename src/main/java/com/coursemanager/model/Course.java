@@ -1,4 +1,4 @@
-package com.benabder.benabderturf.model;
+package com.coursemanager.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -13,7 +13,9 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nom;
+    private String numero;
     private LocalDate date;
-    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "courseid", nullable = false, updatable = false)
     private List<Partant> partants;
 }

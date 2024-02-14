@@ -1,9 +1,11 @@
-package com.benabder.benabderturf.service;
+package com.coursemanager.service;
 
-import com.benabder.benabderturf.model.Course;
-import com.benabder.benabderturf.repository.CourseRepository;
+import com.coursemanager.model.Course;
+import com.coursemanager.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CourseService {
@@ -15,5 +17,8 @@ public class CourseService {
             throw new IllegalArgumentException("Une course doit avoir au moins 3 partants.");
         }
         return courseRepository.save(course);
+    }
+    public List<Course> recupCourses() {
+        return courseRepository.findAll();
     }
 }

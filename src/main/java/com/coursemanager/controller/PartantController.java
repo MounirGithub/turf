@@ -1,8 +1,8 @@
-package com.benabder.benabderturf.controller;
+package com.coursemanager.controller;
 
 
-import com.benabder.benabderturf.model.Partant;
-import com.benabder.benabderturf.service.PartantService;
+import com.coursemanager.model.Partant;
+import com.coursemanager.service.PartantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

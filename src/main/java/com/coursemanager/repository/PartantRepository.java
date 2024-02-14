@@ -1,6 +1,6 @@
-package com.benabder.benabderturf.repository;
+package com.coursemanager.repository;
 
-import com.benabder.benabderturf.model.Partant;
+import com.coursemanager.model.Partant;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
